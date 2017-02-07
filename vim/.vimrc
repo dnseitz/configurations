@@ -43,10 +43,10 @@ if has("autocmd")
   au BufReadPost * if line("'\"") > 1 && line("'\"") <= line("$") | exe "normal! g'\"" | endif
 endif
 
-
-au Filetype * let &l:tabstop = 2
-au Filetype * let &l:shiftwidth = 2
-au Filetype * let &l:softtabstop = 2
+" Rust
+au Filetype rust let &l:tabstop = 4
+au Filetype rust let &l:shiftwidth = 4
+au Filetype rust let &l:softtabstop = 4
 
 set hidden
 nnoremap <C-N> :bnext<CR>
